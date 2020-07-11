@@ -1,9 +1,11 @@
-var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-for (/* fill in parts of the 'for' loop to loop over names array */) {
-	var firstLetter =
-if (/* fill in condition here */) {
-    // byeSpeaker.xxxx
-  } else {
-    // helloSpeaker.xxxx
-  }
-}
+(function (window) {
+	var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+	for (var name of names) {
+		var firstLetter = name.charAt(0).toLowerCase();
+		if (firstLetter === "j") {
+		    byeSpeaker.speak(name);
+		} else {
+		    helloSpeaker.speak(name);
+		}
+	}
+})(window);
